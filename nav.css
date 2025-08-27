@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+#nav-mid{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    /* justify-content: space-between; */
+}
+#nav-mid li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;              /* underline thickness */
+  width: 0;                 /* start invisible */
+  background-color: black;  /* line color */
+  transition: width 1s ease; /* smooth animation */
+}
+
+#nav-mid li a:hover::after {
+  width: 100%;              /* expands fully on hover */
+}
