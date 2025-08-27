@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+#logo-heading{
+    color: blue;
+    font-size: 40px;
+}
 #navigation{
     display: flex;
     justify-content: space-evenly;
@@ -21,6 +25,8 @@
 }
 #nav-mid li a{
     position: relative;
+    text-decoration: none;
+    color: rgb(20, 20, 78);
 }
 #nav-mid li a::after {
   content: "";
@@ -35,4 +41,52 @@
 
 #nav-mid li a:hover::after {
   width: 100%;              /* expands fully on hover */
+}
+#sign-in-btn{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(20, 20, 78);;
+}
+#get-started-btn{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    height: 40px;
+    width: 120px;
+    background-color: blue;
+    border-radius: 8px;
+    border: 2px solid;
+}
+#get-started-btn:hover{
+    background-color: rgb(29, 29, 151);
+    cursor: pointer;
+}
+.mega-dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.mega-dropdown a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+#nav-mid li{
+    position: relative;
+;
+}
+@keyframes dropdownFade {
+    from{opacity: 0; transform: translateY(-10px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+#nav-mid li:hover .mega-dropdown{
+    display: grid;
+    animation: dropdownFade 0.3s ease;
 }
