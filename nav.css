@@ -33,14 +33,14 @@
   position: absolute;
   left: 0;
   bottom: -20px;
-  height: 2px;              /* underline thickness */
-  width: 0%;                 /* start invisible */
-  background-color: black;  /* line color */
-  transition: width 0.5s ease; /* smooth animation */
+  height: 2px;              
+  width: 0%;                 
+  background-color: black;  
+  transition: width 0.5s ease; 
 }
 
 #nav-mid li a:hover::after {
-  width: 100%;              /* expands fully on hover */
+  width: 100%;              
 }
 #sign-in-btn{
     text-decoration: none;
@@ -63,13 +63,13 @@
 }
 .mega-dropdown{
     position: absolute;
-    top: 100%;
+    top: 45px;
     left: 0;
     padding: 20px;
     display: none;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 15px;
-    width: 400px;
+    gap: 20px;
+    width: 450px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 .mega-dropdown a{
